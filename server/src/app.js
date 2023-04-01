@@ -35,6 +35,9 @@ database.once("connected", () => {
 });
 
 app.use(cors(corsOptions));
+app.use(express.static("public"));
+app.use(express.json());
+app.use(cors(corsOptions));
 
 // Retrieve all news
 app.get("/news", async (req, res) => {
@@ -49,10 +52,6 @@ app.get("/news", async (req, res) => {
         res.status(500).send("Internal server error");
     }
 });
-
-app.use(express.static("public"));
-app.use(express.json());
-app.use(cors(corsOptions));
 
 app.use("/listing", listingRouter);
 app.use("/user", userRoter);
