@@ -18,7 +18,7 @@ const AppError = require("../utils/appError");
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         console.log("===== destination =====");
-        console.log(req);
+        console.log(req.body);
         console.log(file);
         const path = p.join(__dirname, `../../public/assets/images/cars/${req.body.vin}`);
         fs.mkdirSync(path, { recursive: true });
@@ -26,7 +26,7 @@ const storage = multer.diskStorage({
     },
     filename: function (req, file, cb) {
         console.log("===== filename =====");
-        console.log(req);
+        console.log(req.body);
         console.log(file);
         const extension = file.mimetype.split("/")[1];
         const uniqueFileName = `car-${req.body.carCompany.replaceAll(" ", "")}-${req.body.carModel.replaceAll(" ", "")}-${Date.now()}.${extension}`;
