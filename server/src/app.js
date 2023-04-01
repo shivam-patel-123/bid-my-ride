@@ -4,6 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 require("dotenv").config();
+const path = require("path");
 
 const listingRouter = require("./routes/listingRoutes");
 const userRoter = require("./routes/userRouter");
@@ -35,7 +36,7 @@ database.once("connected", () => {
 });
 
 app.use(cors(corsOptions));
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "../public")));
 app.use(express.json());
 app.use(cors(corsOptions));
 
