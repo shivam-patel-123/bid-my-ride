@@ -1,0 +1,18 @@
+{
+    "builds": [
+        {
+            "src": "src/app.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "src/app.js"
+        }
+    ],
+    "env": {
+        "MONGO_URI": "mongodb+srv://shivampatel:$hivamPatel123@bidmyridecluster.yedgvzt.mongodb.net/bidMyRideDB",
+        "SECRET_KEY": "Shvet@123"
+    }
+}
