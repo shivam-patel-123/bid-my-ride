@@ -25,13 +25,13 @@ const storage = multer.diskStorage({
 
         // const path = p.join(process.cwd(), "public", "assets", "images", "cars", `${req.body.vin}`);
 
-        fs.access(path, fs.constants.W_OK, (err) => {
-            if (err) {
-                console.log("Write permission is not granted");
-            } else {
-                console.log("Write permission is granted");
-            }
-        });
+        // fs.access(path, fs.constants.W_OK, (err) => {
+        //     if (err) {
+        //         console.log("Write permission is not granted");
+        //     } else {
+        //         console.log("Write permission is granted");
+        //     }
+        // });
 
         // const path = `../../public/assets/images/cars/${req.body.vin}`;
         fs.mkdirSync(path);
