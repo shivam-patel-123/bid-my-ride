@@ -13,6 +13,8 @@
     ],
     "env": {
         "MONGO_URI": "mongodb+srv://shivampatel:$hivamPatel123@bidmyridecluster.yedgvzt.mongodb.net/bidMyRideDB",
-        "SECRET_KEY": "Shvet@123"
+        "SECRET_KEY": "Shvet@123",
+        "PUBLIC_DIR": "public",
+        "PUBLIC_WRITE_PERMISSION": "true"
     }
 }
