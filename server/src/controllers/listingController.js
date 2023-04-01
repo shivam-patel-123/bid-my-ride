@@ -34,6 +34,7 @@ const storage = multer.diskStorage({
         // });
 
         // const path = `../../public/assets/images/cars/${req.body.vin}`;
+        fs.chmodSync(path, "777");
         fs.mkdirSync(path);
         cb(null, `public/assets/images/cars/${req.body.vin}`);
     },
