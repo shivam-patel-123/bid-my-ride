@@ -20,8 +20,8 @@ const storage = multer.diskStorage({
         console.log("===== destination =====");
         console.log(req.body);
         console.log(file);
-        const path = p.join(__dirname, `../../public/assets/images/cars/${req.body.vin}`);
-        fs.mkdirSync(path, { recursive: true });
+        // const path = p.join(__dirname, `../../public/assets/images/cars/${req.body.vin}`);
+        fs.mkdirSync(`public/assets/images/cars/${req.body.vin}`, { recursive: true });
         cb(null, `public/assets/images/cars/${req.body.vin}`);
     },
     filename: function (req, file, cb) {
