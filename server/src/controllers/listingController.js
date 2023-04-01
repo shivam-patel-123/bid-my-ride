@@ -22,7 +22,7 @@ const storage = multer.diskStorage({
         console.log(file);
         // const path = p.join(__dirname, `../../public/assets/images/cars/${req.body.vin}`);
         console.log(process.cwd());
-        const path = path.join(process.cwd(), "public", "assets", "images", "cars", `${req.body.vin}`);
+        const path = path.join(process.cwd(), "server", "public", "assets", "images", "cars", `${req.body.vin}`);
         // const path = `../../public/assets/images/cars/${req.body.vin}`;
         fs.mkdirSync(path, { recursive: true });
         cb(null, `public/assets/images/cars/${req.body.vin}`);
