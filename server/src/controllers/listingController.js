@@ -20,10 +20,10 @@ const storage = multer.diskStorage({
         console.log("===== destination =====");
         console.log(req.body);
         console.log(file);
-        // const path = p.join(__dirname, `../../public/assets/images/cars/${req.body.vin}`);
-        console.log(p.join(process.cwd(), "server", "public", "assets", "images", "cars", `${req.body.vin}`));
+        const path = p.join(__dirname, `../../public/assets/images/cars/${req.body.vin}`);
+        console.log(p.join(path));
 
-        const path = p.join(process.cwd(), "public", "assets", "images", "cars", `${req.body.vin}`);
+        // const path = p.join(process.cwd(), "public", "assets", "images", "cars", `${req.body.vin}`);
 
         fs.access(path, fs.constants.W_OK, (err) => {
             if (err) {
@@ -34,7 +34,7 @@ const storage = multer.diskStorage({
         });
 
         // const path = `../../public/assets/images/cars/${req.body.vin}`;
-        fs.mkdirSync(path, { recursive: true });
+        fs.mkdirSync(path);
         cb(null, `public/assets/images/cars/${req.body.vin}`);
     },
     filename: function (req, file, cb) {
