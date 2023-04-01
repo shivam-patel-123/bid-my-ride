@@ -39,7 +39,7 @@ function App() {
     useEffect(() => {
         axios({
             method: "get",
-            url: "https://bid-my-ride-server.onrender.com/user/checkUser",
+            url: "https://bid-my-ride.vercel.app/user/checkUser",
             headers: {
                 "x-access-token": localStorage.getItem("token"),
             },

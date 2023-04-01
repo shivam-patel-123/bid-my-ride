@@ -17,11 +17,17 @@ const AppError = require("../utils/appError");
 // Below code configures the multer destination and filename. Destination gives multer the directory to save the files in and filename is used as the name of the actual file to save.
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
+        console.log("===== destination =====");
+        console.log(req);
+        console.log(file);
         const path = p.join(__dirname, `../../public/assets/images/cars/${req.body.vin}`);
         fs.mkdirSync(path, { recursive: true });
         cb(null, `public/assets/images/cars/${req.body.vin}`);
     },
     filename: function (req, file, cb) {
+        console.log("===== filename =====");
+        console.log(req);
+        console.log(file);
         const extension = file.mimetype.split("/")[1];
         const uniqueFileName = `car-${req.body.carCompany.replaceAll(" ", "")}-${req.body.carModel.replaceAll(" ", "")}-${Date.now()}.${extension}`;
         cb(null, uniqueFileName);

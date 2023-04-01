@@ -51,7 +51,7 @@ export default function ForgotPage() {
             try {
                 axios({
                     method: "post",
-                    url: "https://bid-my-ride-server.onrender.com/user/forgotpassword",
+                    url: "https://bid-my-ride.vercel.app/user/forgotpassword",
                     data: {
                         email: inputs.email,
                         password: inputs.pass,
