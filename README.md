@@ -88,6 +88,17 @@ npm run dev
 -   **Upload Car Documents:** Users can upload multiple documents of their car in pdf format for admin to review. It will give admin the proof of reliability and existence of a car.
 -   **Download Car Documents:** Uses can download their uploaded documents of a car. It is worth to note that admin can download documents of any car listing (Obviously).
 
+## **User Profile Management**
+
+-   **User registration:** User registration is the process of creating an account or profile on a website or platform, which allows a user to access certain features and content that may not be available to non-registered users. Typically, the registration process involves providing personal information such as name, email address, password.
+-   **User login:** User login is the process of accessing a BIDMYRIDE using a set of credentials that have previously been created during the user registration process. Typically, users enter their email address and password to authenticate their identity and gain access to their account.
+-   **View user profile:** Viewing a user profile is the process of accessing a page of a BIDMYRIDE that displays information about a specific user. User profiles can provide a variety of information such as their name and email.
+-   **Update user profile:** A user profile update page is a web page within a BIDMYRIDE that allows users to edit and update their profile information. This page displays the user's current profile information, such as their name, email and password(optional), and provides a form or interface for users to make changes to this information.
+
+-   **Forgot password:** A forgot password page is a web page within a BIDMYRIDE website that allows users who have forgotten their password to reset it. This page prompts the user to enter their email address , and then they can set the new password for their account.The purpose of a forgot password page is to provide users with a convenient and secure way to regain access to their account if they have forgotten their password.
+-   **User logout:** User logout is the process of ending a user's current session on a BIDMYRIDE website, which involves terminating their access to the website and logging them out of their account. When a user logs out, they are redirected to a login page.The purpose of user logout is to protect the user's account and personal information by ensuring that unauthorized individuals cannot access their account or make changes to their profile.
+-   **Delete user account:** Deleting an account refers to the process of permanently removing a user's account and all associated data from a BIDMYRIDE websitem. This process involves the user initiating the deletion process and confirming their intention to delete their account, after which the platform will permanently remove all data associated with the account.
+
 # Backend Folder Structure
 
 ```
