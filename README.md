@@ -2,7 +2,7 @@
 
 ## **Live At: https://thunderous-treacle-c9f408.netlify.app**
 
-<img width="1680" alt="Screenshot 2023-04-25 at 9 54 50 AM" src="https://user-images.githubusercontent.com/67619547/234282788-81bdd9dc-9f70-4b42-b1c4-0f2b7cfd9fe2.png">
+<img width="800" alt="Screenshot 2023-04-25 at 9 54 50 AM" src="https://user-images.githubusercontent.com/67619547/234282788-81bdd9dc-9f70-4b42-b1c4-0f2b7cfd9fe2.png">
 
 ### **About application**
 
