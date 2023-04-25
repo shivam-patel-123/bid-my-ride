@@ -23,7 +23,7 @@ node -v
 npm -v
 ```
 
-`NOTE: node version should be >14.0 because I am using `replaceAll()` which was not available in node version 14 or lower.`
+`NOTE:` node version should be >14.0 because I am using `replaceAll()` which was not available in node version 14 or lower. If you want to still use node version <=14.0, you can use `split().join()` function instead.
 
 -   _Git cli:_ Download Git command line interface using this [link](https://git-scm.com/downloads). If you are not sure if you have installed git on you machine, run the following command:
 
