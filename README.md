@@ -2,6 +2,8 @@
 
 ## **Live At: https://thunderous-treacle-c9f408.netlify.app**
 
+<img width="1680" alt="Screenshot 2023-04-25 at 9 54 50 AM" src="https://user-images.githubusercontent.com/67619547/234282788-81bdd9dc-9f70-4b42-b1c4-0f2b7cfd9fe2.png">
+
 ### **About application**
 
 BidMyRide is a virtual car auction platform that provides an opportunity for both buyers and sellers to engage in the purchasing and selling of cars online. The platform offers a real-time bidding process, allowing users to browse available cars, place bids, and compare different cars based on their features and specifications. The platform also provides a comprehensive transaction history, allowing users to track their buying and selling activities.
